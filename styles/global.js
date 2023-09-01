@@ -19,6 +19,10 @@ export const globalStyles = StyleSheet.create({
         padding : 10,
         fontSize : 16,
         borderWidth : 1,
-        marginVertical : 5,
-    }   
+    }, errors : {
+        color : 'red',
+        fontSize : 12,
+        marginBottom : 6,
+        marginLeft : 5
+    }
 })

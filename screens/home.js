@@ -5,7 +5,9 @@ import Card from '../components/card'
 import { MaterialIcons } from '@expo/vector-icons';
 import ReviewForm from './reviewForm';
 
+
 const Home = ({ navigation }) => {
+
   const [modalOpen, setModalOpen] = useState(false)
 
   const [review, setReview] = useState([
