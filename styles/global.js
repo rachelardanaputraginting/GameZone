@@ -19,6 +19,7 @@ export const globalStyles = StyleSheet.create({
         padding : 10,
         fontSize : 16,
         borderWidth : 1,
+        textAlignVertical : 'top'
     }, errors : {
         color : 'red',
         fontSize : 12,

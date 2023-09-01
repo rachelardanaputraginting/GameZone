@@ -29,7 +29,7 @@ const ReviewForm = ({addReview}) => {
                 <TextInput style={globalStyles.input} placeholder='Review Title' onChangeText={props.handleChange('title')} value={props.values.title} onBlur={props.handleBlur('title')} />
                 <Text style={globalStyles.errors}>{props.touched.title && props.errors.title}</Text>
 
-                <TextInput style={globalStyles.input}  placeholder='Review Body' multiline onChangeText={props.handleChange('body')} value={props.values.body} onBlur={props.handleBlur('body')} /> 
+                <TextInput style={globalStyles.input}  placeholder='Review Body'  onChangeText={props.handleChange('body')} value={props.values.body} onBlur={props.handleBlur('body')} numberOfLines={4} /> 
                 <Text style={globalStyles.errors}>{props.touched.body && props.errors.body}</Text>  
 
                 <TextInput style={globalStyles.input}  placeholder='Rating (1-5)' keyboardType='numeric' multiline onChangeText={props.handleChange('rating')} value={props.values.rating} onBlur={props.handleBlur('rating')} /> 
