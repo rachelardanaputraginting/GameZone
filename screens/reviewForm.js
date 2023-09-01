@@ -4,6 +4,7 @@ import {Formik} from 'formik';
 import { globalStyles } from '../styles/global';
 import { TextInput } from 'react-native-gesture-handler';
 import * as yup from 'yup'
+import FlatButton from '../components/flatButton';
 
 const ReviewForm = ({addReview}) => {
 
@@ -31,10 +32,10 @@ const ReviewForm = ({addReview}) => {
                 <TextInput style={globalStyles.input}  placeholder='Review Body' multiline onChangeText={props.handleChange('body')} value={props.values.body} onBlur={props.handleBlur('body')} /> 
                 <Text style={globalStyles.errors}>{props.touched.body && props.errors.body}</Text>  
 
-                <TextInput style={globalStyles.input}  placeholder='Rating (1-5)' keyboardType='numeric' multiline onChangeText={props.handleChange('rating')} value={props.values.rating} onBlue={props.handleBlur('rating')} /> 
+                <TextInput style={globalStyles.input}  placeholder='Rating (1-5)' keyboardType='numeric' multiline onChangeText={props.handleChange('rating')} value={props.values.rating} onBlur={props.handleBlur('rating')} /> 
                 <Text style={globalStyles.errors}>{props.touched.rating && props.errors.rating}</Text>   
 
-                <Button title='Submit' color='gray' onPress={props.handleSubmit} />            
+                <FlatButton onPress={props.handleSubmit} text="Submit" />            
             </View>
         )}
       </Formik>

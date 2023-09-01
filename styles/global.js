@@ -22,7 +22,7 @@ export const globalStyles = StyleSheet.create({
     }, errors : {
         color : 'red',
         fontSize : 12,
-        marginBottom : 6,
+        marginBottom : 10,
         marginLeft : 5
     }
 })
